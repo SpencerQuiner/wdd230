@@ -1,0 +1,1 @@
+This repository is all my work for the BYU Idaho WDD230 Front End Web Development 1 class. All projects and assignments will be included in this repository. 
