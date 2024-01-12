@@ -1,0 +1,147 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather",serif;
+}
+header, main, footer, nav {
+    max-width: 640px;
+    margin: .1rem auto;
+   
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #fff;
+    background-color: #0C090B;
+}
+
+header div {
+    grid-column: 1/2;
+    margin: 1rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#profilePhoto {
+    border-radius: 50%;
+    max-width: 150px;
+}
+header span {
+    display: grid;
+    grid-column: 2/3;
+    font-size: 1.25rem;
+    align-content: center;   
+}
+
+nav {
+    display: block;
+    background-color: #1E4881;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+nav li {
+    padding:.5rem;
+}
+nav a {
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav > ul >li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active{
+    background-color: #F6D013;
+}
+nav > ul > li.active > a{
+    color:#0C090B;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+}
+
+#classTitle {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    border-bottom: solid 1px #0C090B;
+    display: grid;
+}
+
+h1 {
+    font-size: 1.5rem;
+    justify-self: center;
+    padding: .5rem;
+}
+
+section:nth-child(2){
+    grid-row: 2/3;
+
+}
+
+section:nth-child(3){
+grid-row: 3/4;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #0C090B;
+    border-radius: 5px;
+    margin: .5rem;
+    grid-column: 1/4;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card h2 {
+    background-color: #0C090B;
+    color:#fff;
+    margin: 0;
+    padding:  15px 15px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.card div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    padding:.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E4881;
+    color:#fff;
+    padding: 20px;
+}
+
+footer p {
+    font-size: .75rem;
+    padding: .5rem;
+}
