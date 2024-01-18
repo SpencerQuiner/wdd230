@@ -169,6 +169,9 @@ grid-row: 3/4;
 .card ul li {
     padding: .5rem;
 }
+.card a {
+    text-decoration: none;
+}
 
 .card h2 {
     background-color: #0C090B;
