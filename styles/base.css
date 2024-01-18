@@ -17,6 +17,29 @@ header {
     grid-template-columns: 1fr 2fr;
     color: #fff;
     background-color: #0C090B;
+    position: relative;
+}
+
+#darkmode {
+   font-weight: 600;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#darkmode::before{
+    content: "\263D";
+}
+
+#darkmode.dark::before {
+    content:"\2600";
 }
 
 header div {
@@ -48,7 +71,7 @@ nav ul {
     font-size: 1.25rem;
 }
 nav li {
-    padding:.5rem;
+    padding:.75rem;
 }
 nav a {
     display: block;
@@ -67,6 +90,36 @@ nav .active{
 nav > ul > li.active > a{
     color:#0C090B;
 }
+
+#hamburgerbtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: .25rem 2vw;
+}
+#hamburgerbtn.open {
+    text-align: right;
+}
+
+#hamburgerbtn::before {
+    content: "\2630";
+}
+#hamburgerbtn.open::before {
+    content:"\2716";
+}
+
+nav ul.menulinks {
+    display: none;
+}
+
+nav ul.menulinks.open {
+    display: block;
+}
+
 main {
     display: grid;
     grid-template-rows: 1fr auto auto;
@@ -85,12 +138,12 @@ h1 {
     padding: .5rem;
 }
 
-section:nth-child(2){
+#activities {
     grid-row: 2/3;
 
 }
 
-section:nth-child(3){
+#info {
 grid-row: 3/4;
 }
 
@@ -113,6 +166,10 @@ grid-row: 3/4;
     margin: 0;
 }
 
+.card ul li {
+    padding: .5rem;
+}
+
 .card h2 {
     background-color: #0C090B;
     color:#fff;
@@ -129,7 +186,7 @@ grid-row: 3/4;
 }
 
 .card p {
-    padding:.5rem;
+    padding:.75rem;
 }
 
 footer {
@@ -144,4 +201,35 @@ footer {
 footer p {
     font-size: .75rem;
     padding: .5rem;
+}
+
+/*dark mode CSS*/
+
+main.dark {
+    background-color: #0C090B;
+}
+
+#classTitle.dark {
+    border-color: #fff;
+}
+
+h1.dark {
+    color:#fff;
+}
+
+
+section.card.dark{
+    border: solid 2px #fff;
+    border-radius: 5px;
+    margin: .5rem;
+    color:#fff;
+    overflow: hidden;
+}
+
+section.card.dark h2 {
+    background-color: #1E4881;
+}
+
+section.card.dark a {
+    color: #F6D013;
 }

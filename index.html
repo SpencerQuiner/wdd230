@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="Spencer Quiner Web Frontend Development">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://fotos.hoteles.net/articulos/guia-de-arrecife-4763-2.jpg">
     <meta property="og:url" content="https://spencerquiner.github.io/wdd230/index.html">
 </head>
@@ -22,9 +22,11 @@
     <header>
         <div><img id="profilePhoto" src="images/profilephoto.webp" alt="Spencer Quiner profile"></div>
         <span>Spencer B. Quiner</span>
+        <button id="darkmode"></button>
     </header>
     <nav>
-        <ul>
+        <button id="hamburgerbtn"></button>
+        <ul class="menulinks">
             <li class="active"><a  href="https://spencerquiner.github.io/wdd230/index.html">Home</a></li>
             <li><a href="">Chamber</a></li>
             <li><a href="https://spencerquiner.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
@@ -33,18 +35,18 @@
     </nav>
     <main>
         <div id="classTitle"><h1>WDD 230: Web Frontend Development</h1></div>
-        <section class="card">
+        <section id="activities" class="card">
             <h2>Learning Activities</h2>
             <ul>
                 <li>Week 01: <a href="https://spencerquiner.github.io/wdd230/week01/holygrail.html">layout</a>|<a href="https://spencerquiner.github.io/wdd230/week01/media-query.html">Media Query</a>|<a href="https://codepen.io/squiner/pen/gOEMxZL">JS Pen</a></li>
-                <li>Week 02: <a href="https://spencerquiner.github.io/wdd230/week02/design.html">Design Principles</a>|<a href="https://codepen.io/squiner/pen/BabWRrK">Responsive Hamburger Menu</a>|<a href="https://spencerquiner.github.io/wdd230/week02/bom.html">DOM Manipulation</a></li>
+                <li>Week 02: <a href="https://spencerquiner.github.io/wdd230/week02/design.html">Design Principles</a>|<a href="https://codepen.io/squiner/pen/BabWRrK">Hamburger Menu</a>|<a href="https://spencerquiner.github.io/wdd230/week02/bom.html">DOM Manipulation</a></li>
                 <li>Week 03: <a href=""></a></li>
                 <li>Week 04: <a href=""></a></li>
                 <li>Week 05: <a href=""></a></li>
                 <li>Week 06: <a href=""></a></li>
             </ul>
         </section>
-        <section class="card">
+        <section id="info" class="card">
             <h2>Information</h2>
             <div>
                 <p>Arrecife, Spain</p>
@@ -59,5 +61,6 @@
         <p id="lastmod"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
