@@ -8,6 +8,9 @@
     <meta name="description" content="Chamber of Commerce site for WDD-230">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="Arrecife Chamber of Commerce">
@@ -16,6 +19,73 @@
     <meta property="og:url" content="https://spencerquiner.github.io/wdd230/chamber/index.html">
 </head>
 <body>
-    
+    <header>
+        <div><img class="logo" src="images/logo.jpg" alt= "Arrecife Chamber of Commerce Logo" width="200px"></div>
+        <nav>
+            <button id="hamburgerbtn"></button>
+            <ul class="menulinks">
+                <li><a class="active" href="https://spencerquiner.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li id="menulogo"><a href="https://spencerquiner.github.io/wdd230/chamber/index.html"><img class="logo"src="images/logo.jpg" alt="Arrecife Chamber of Commerce Logo" width="200px"></a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>        
+    </header>
+        
+    <main>
+        <section>
+            <img id="heroimg" src="images/puente de las bolashero.jpg" alt="Charco de San Gines">
+            <div id="title">Arrecife Chamber of Commerce</div>
+        </section>
+        <section id="callToAction">
+            <button id="join">Join</button>
+        </section>
+        <div>
+        <section id="currentEvents">
+            <h2>Current Events</h2>
+            <article>
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa exercitationem quis quam! Accusamus nesciunt possimus maxime porro nobis iure molestiae voluptate. Deleniti nisi esse possimus necessitatibus architecto dolores fugit!</p>
+            </article>
+            <article>
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis animi voluptatibus odit voluptates, esse neque velit fuga qui aliquam eos ipsa vel quas cum numquam illum. Laudantium, nulla? Officia!</p>
+            </article>
+        </section>
+        <section id="currentWeather">
+            <h2>Weather</h2>
+            <h3>Date and Time:</h3>
+            <h3>Conditions: sunny</h3>
+            <h3>High: 31&deg C</h3>
+            <h3>Low: 25&deg C</h3>
+            <h3>Wind: Northeast 25 kph</h3>
+        </section>
+        </div>
+        <section id="memberSpotLight">
+            <H2>Member Spotlight</H2>
+            <article>
+                <img src="images/placeholder.jpeg" alt="member logo">
+                <h3>Business Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
+            </article>
+            <article>
+                <img src="images/placeholder.jpeg" alt="member logo">
+                <h3>Business Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
+            </article>
+            <article>
+                <img src="images/placeholder.jpeg" alt="member logo">
+                <h3>Business Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p id="copywrite"></p>
+        <p id="lastmod"></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

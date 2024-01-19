@@ -1,0 +1,150 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato",sans-serif;
+}
+
+header, main, footer, nav {
+    max-width: 640px;   
+}
+
+header > div {
+    background-color: #2548e4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;    
+}
+
+nav {
+    display: block;
+    background-color: #2548e4;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+nav li {
+    padding:.75rem;
+}
+nav a {
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#hamburgerbtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: .25rem 2vw;
+}
+
+#hamburgerbtn.open {
+    text-align: right;
+}
+
+#hamburgerbtn::before {
+    content: "\2630";
+}
+#hamburgerbtn.open::before {
+    content:"\2716";
+}
+
+nav ul.menulinks {
+    display: none;
+}
+
+nav ul.menulinks.open {
+    display: block;
+}
+
+#heroimg, #menulogo {
+    display: none;
+}
+#title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+#callToAction {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#join {
+    padding: 20px;
+    margin: 20 px;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: #efd62e;
+    border: none;
+    border-radius: 20px;
+}
+
+main > div {
+    background-color: #2548e4;
+    padding: 10px;
+
+}
+#currentEvents > h2 {
+    color:#fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#currentEvents > article {
+    background-color: #fff;
+    border: solid #2548e4 1px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#memberSpotLight > h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+#currentWeather {
+    background-color: #efd62e;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#memberSpotLight > article {
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#memberSpotLight > article > img {
+    width: 8rem;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color:#fff;
+    padding: 30px;
+    text-align: center;
+}
