@@ -51,7 +51,7 @@
         grid-column: 2/3;
         width: 100%;
         padding: 20px;
-        margin: 20 px;
+        margin: 20px;
         font-size: 2rem;
         font-weight: 500;
         background-color: #efd62e;
@@ -59,7 +59,7 @@
         border-radius: 20px;
     }
 
-    main > div {
+    #news {
         background-color: #2548e4;
         padding: 10px;
         display: grid;
