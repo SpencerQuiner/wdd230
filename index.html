@@ -34,27 +34,40 @@
         </ul>
     </nav>
     <main>
-        <div id="classTitle"><h1>WDD 230: Web Frontend Development</h1></div>
-        <section id="activities" class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="https://spencerquiner.github.io/wdd230/week01/holygrail.html">layout</a>|<a href="https://spencerquiner.github.io/wdd230/week01/media-query.html">Media Query</a>|<a href="https://codepen.io/squiner/pen/gOEMxZL">JS Pen</a></li>
-                <li>Week 02: <a href="https://spencerquiner.github.io/wdd230/week02/design.html">Design Principles</a>|<a href="https://codepen.io/squiner/pen/BabWRrK">Hamburger Menu</a>|<a href="https://spencerquiner.github.io/wdd230/week02/bom.html">DOM Manipulation</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>|<a href="week03/lazyload.html">Lazyload</a>|<a href="week03/responsive-images.html">responsive images</a>|<a href="week03/enhancedbom.html">Web Storage</a></li>
-                <li>Week 04: <a href=""></a></li>
-                <li>Week 05: <a href=""></a></li>
-                <li>Week 06: <a href=""></a></li>
-            </ul>
-        </section>
-        <section id="info" class="card">
-            <h2>Information</h2>
-            <div>
-                <p>Arrecife, Spain</p>
-                <p>Weather placeholder</p>
-                <p>Page Visits: placeholder</p>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 640px)">
+                <img src="images/hero-large.webp" alt="Portland Temple Reflecting Pool" width="960" height="480">
+            </picture>
+            <div class="herolabel">
+                <p>Portland Oregon Temple</p>
             </div>
-        </section>
-
+        </div>
+        <div id="main">
+            <div id="classTitle"><h1>WDD 230: Web Frontend Development</h1></div>
+            <section id="activities" class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01: <a href="https://spencerquiner.github.io/wdd230/week01/holygrail.html">layout</a>|<a href="https://spencerquiner.github.io/wdd230/week01/media-query.html">Media Query</a>|<a href="https://codepen.io/squiner/pen/gOEMxZL">JS Pen</a></li>
+                    <li>Week 02: <a href="https://spencerquiner.github.io/wdd230/week02/design.html">Design Principles</a>|<a href="https://codepen.io/squiner/pen/BabWRrK">Hamburger Menu</a>|<a href="https://spencerquiner.github.io/wdd230/week02/bom.html">DOM Manipulation</a></li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>|<a href="week03/lazyload.html">Lazyload</a>|<a href="week03/responsive-images.html">responsive images</a>|<a href="week03/enhancedbom.html">Web Storage</a></li>
+                    <li>Week 04: <a href=""></a></li>
+                    <li>Week 05: <a href=""></a></li>
+                    <li>Week 06: <a href=""></a></li>
+                </ul>
+            </section>
+            <section id="info" class="card">
+                <h2>Information</h2>
+                <div>
+                    <p>Arrecife, Spain</p>
+                    <p>Weather placeholder</p>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                </div>
+            </section>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13962.174429004113!2d-13.567563335284028!3d28.971258380315938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc46276fc5b3ba57%3A0x93c5d5f6589a2ec4!2sArrecife%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1706187113685!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p id="copywrite"></p>
