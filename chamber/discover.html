@@ -25,7 +25,7 @@
             <button id="hamburgerbtn"></button>
             <ul class="menulinks">
                 <li><a href="https://spencerquiner.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a class="active" href="https://spencerquiner.github.io/wdd230/chamber>/discover.html">Discover</a></li>
+                <li><a class="active" href="https://spencerquiner.github.io/wdd230/chamber/discover.html">Discover</a></li>
                 <li id="menulogo"><a href="https://spencerquiner.github.io/wdd230/chamber/index.html"><img class="logo" src="images/logo.jpg" alt="Arrecife Chamber of Commerce Logo"></a></li>
                 <li><a href="">Directory</a></li>
                 <li><a href="">Join</a></li>
@@ -33,8 +33,80 @@
         </nav>        
     </header>
         
-    <main>
-
+    <main id="discoverMain">
+        <div class="sidebar">
+            <div class="card">
+                <p id="lastVisit"></p>
+            </div>
+            <div class="card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27924.353817661224!2d-13.557263599999999!3d28.971239999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1706271238506!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card">
+                <h3>Population:</h3><p>2020 - 64,645</p>
+                <h3>Average Rainy Days:</h3><p>18/year</p>
+                <h3>Record Low:</h3><p> 46.4&deg; F</p>
+                <h3>Record High:</h3><p> 110.5&deg; F</p>
+                <h3>Average Tempuratures:</h3><p> 76.6&deg;/63.3&deg; F</p>
+            </div>
+            <div class="card">
+                <img src="images/Arrecife-poster.webp" alt="Carnival poster">
+                <h3>Arrecife Carnival 2024</h3>
+                <p>Theme: Carnival of the West</p>
+                <p>12-14 February</p>
+            </div>
+            <div class="card">
+                <h3>Attractions</h3>
+                <a href="https://www.introducinglanzarote.com/reducto-beach">Playa Del Reducto</a>
+                <a href="https://www.introducinglanzarote.com/san-gabriel-castle">Castillo de San Gabriel</a>
+                <a href="https://lanzaroteinformation.co.uk/el-charco-san-gines-arrecife/">El Charco de San Gines</a>
+                <a href="https://turismolanzarote.com/en/market/centro-comercial-open-mall-lanzarote/">Open Mall Lanzarote</a>
+            </div>
+        </div>
+        <div class="gallery">
+            <figure>
+                <picture>
+                    <source srcset="images/castillosj-small.webp" media="(max-width: 400px)">
+                    <img src="images/castillo-de-san-jose.webp" alt="castillo de san jose" width="800" height="400" loading="lazy" >
+                </picture>
+                <figcaption>Museo Internacional de Arte Contemporaneo Castillo de San Jose</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source srcset="images/playa-small.webp" media="(max-width: 400px)">
+                    <img src="images/playa-del-reducto.webp" alt="playa del reducto" width="800" height="400" loading="lazy" >
+                </picture>
+                <figcaption>Playa Del Reducto</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source srcset="images/castillosg-small.webp" media="(max-width: 400px)">
+                    <img src="images/castillo-de-san-gabriel.webp" alt="castillo de san gabriel" width="800" height="400" loading="lazy">
+                </picture>
+                <figcaption>Castillo de San Gabriel</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source srcset="images/el-charco-small.webp" media="(max-width: 400px)">
+                    <img src="images/el-charco-de-san-gines.webp" alt="el charco de san gines" width="800" height="400" loading="lazy">
+                </picture>
+                <figcaption>El Charco de San Gines</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source srcset="images/iglesia-small.webp" media="(max-width: 400px)">
+                    <img src="images/iglesia-de-san-gines.webp" alt="iglesia de san gines" width="800" height="400" loading="lazy">
+                </picture>
+                <figcaption>Iglesia de San Gines</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source srcset="images/cueva-de-los-verdes-small.webp" media="(max-width: 400px)">
+                    <img src="images/cueva-de-los-verdes-auditorio-02.webp" alt="cueva de los verdes auditorium" width="800" height="400" loading="lazy">
+                </picture>
+                <figcaption>Cueva De Los Verdes</figcaption>
+            </figure>
+           
+        </div>
     </main>
     <footer>
         <p id="copywrite"></p>

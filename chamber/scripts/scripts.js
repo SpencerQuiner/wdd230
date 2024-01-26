@@ -13,6 +13,40 @@ const date = new Date();
 let copywrite = date.getFullYear();
 let lastmodified = new Date(document.lastModified);
 let lastmod = lastmodified.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
-console.log(lastmod)
+//console.log(lastmod)
 document.querySelector('#copywrite').textContent = `Copywrite \xA9${copywrite} \u2022 Spencer Quiner`;
 document.querySelector('#lastmod').textContent = `Last Modified: ${lastmod}`;
+
+//Google Maps Javascript
+
+
+//visit counter
+let message = document.querySelector("#lastVisit");
+let lastVisit = (localStorage.getItem("lastVisit-ls") || 0);
+console.log(lastVisit);
+
+let dateNow = Date.now();
+console.log(dateNow);
+localStorage.setItem("lastVisit-ls", dateNow);
+
+let timedif = dateNow - lastVisit;
+console.log(timedif);
+
+if(lastVisit !== 0){
+    if(timedif < 86400000){
+        message.textContent = `Back so soon! Awesome!`;
+    }
+    else {
+        let days = Math.floor(timedif/86400000);
+        console.log(days)
+        if(days > 1){
+            message.textContent = `You last visited ${days} days ago.`
+        }
+        else {
+            message.textContent = `You last visited ${days} day ago.`
+        }
+    }
+}
+else {
+    message.textContent = `Welcome! Let us know if you have any questions.`;
+}
