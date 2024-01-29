@@ -1,0 +1,57 @@
+:root {
+	--back: navy;
+    --back2: #333;
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: #000;
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+	font-family: sans-serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back2);
+	font-size: .85rem;
+}
+
+thead > tr:nth-child(2) > th:nth-child(1){
+    background-color: var(--back);
+    border-top: none;
+}
+thead tr th {
+    color: var(--forelight);
+}
+
+tr:first-child th{
+	background-color: var(--back);
+	color: var(--forelight);
+    border-bottom: none;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--border);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
