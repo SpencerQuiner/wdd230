@@ -17,8 +17,6 @@ let lastmod = lastmodified.toLocaleDateString('en-us', { weekday:"long", year:"n
 document.querySelector('#copywrite').textContent = `Copywrite \xA9${copywrite} \u2022 Spencer Quiner`;
 document.querySelector('#lastmod').textContent = `Last Modified: ${lastmod}`;
 
-//Google Maps Javascript
-
 
 //visit counter
 let message = document.querySelector("#lastVisit");
@@ -40,13 +38,14 @@ if(lastVisit !== 0){
         let days = Math.floor(timedif/86400000);
         console.log(days)
         if(days > 1){
-            message.textContent = `You last visited ${days} days ago.`
+            message.textContent = `You last visited ${days} days ago.`;
         }
         else {
-            message.textContent = `You last visited ${days} day ago.`
+            message.textContent = `You last visited ${days} day ago.`;
         }
     }
 }
 else {
     message.textContent = `Welcome! Let us know if you have any questions.`;
 }
+

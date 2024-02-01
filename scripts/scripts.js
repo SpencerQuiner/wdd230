@@ -27,14 +27,15 @@ darkbtn.addEventListener("click", ()=>{
 
 //visit counter
 
-const visitsDisplay = document.querySelector(".visits");
+const visitsDisplay = document.querySelector("#visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
+console.log(numVisits)
 if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
+    visitsDisplay.textContent = `${numVisits}`;
 }
 else {
     visitsDisplay.textContent = `This is your first visit, Welcome!`
 }
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
+
