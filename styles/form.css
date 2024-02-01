@@ -79,3 +79,7 @@ form input.submitBtn {
 .submitBtn:hover {
     cursor: pointer;
 }
+
+#darkmode {
+    display: none;
+}
