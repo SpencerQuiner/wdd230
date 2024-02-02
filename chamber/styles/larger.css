@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #2548e4;
+    --text-dark: #000;
+    --secondary-color: #efd62e;
+    --text-light: #fff;
+}
+
 @media screen and (min-width: 620px) {
     header, main, footer, nav {
         max-width: 1200px;
@@ -19,14 +26,14 @@
     }
 
     nav > ul >li > a:hover {
-        color: #efd62e;
+        color: var(--secondary-color);
     }
     
     nav .active{
-        color: #efd62e;
+        color: var(--secondary-color);
     }
     nav > ul > li >a.active > a{
-        color:#0C090B;
+        color: var(--text-dark);
     }
     
 
@@ -54,13 +61,13 @@
         margin: 20px;
         font-size: 2rem;
         font-weight: 500;
-        background-color: #efd62e;
+        background-color: var(--secondary-color);
         border: none;
         border-radius: 20px;
     }
 
     #news {
-        background-color: #2548e4;
+        background-color: var(--primary-color);
         padding: 10px;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -113,6 +120,20 @@
     }
 
     picture img:hover {
-        box-shadow: 0 0 50px #2548e4;
+        box-shadow: 0 0 50px var(--primary-color);
+    }
+
+    #form-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
+    }
+
+    #sign-up {
+        grid-column: 1/2;
+    }
+
+    #benefits {
+        grid-column: 2/3;
     }
 }

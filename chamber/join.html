@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrecife Chamber of Commerce</title>
+    <meta name="author" content="Spencer Quiner">
+    <meta name="description" content="Chamber of Commerce site for WDD-230">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Arrecife Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fotos.hoteles.net/articulos/guia-de-arrecife-4763-2.jpg">
+    <meta property="og:url" content="https://spencerquiner.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <div><img class="logo" src="images/logo.jpg" alt= "Arrecife Chamber of Commerce Logo"></div>
+        <nav>
+            <button id="hamburgerbtn"></button>
+            <ul class="menulinks">
+                <li><a href="chamber/index.html">Home</a></li>
+                <li><a href="chamber/discover.html">Discover</a></li>
+                <li id="menulogo"><a href="chamber/index.html"><img class="logo" src="images/logo.jpg" alt="Arrecife Chamber of Commerce Logo"></a></li>
+                <li><a href="">Directory</a></li>
+                <li><a class="active" href="chamber/join.html">Join</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main id="form-main">
+        <h1>Join the Chamber of Commerce</h1>
+        <form id="sign-up" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*<input type="text" id="firstName" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" id="lastName" name="lname" required></label>
+                <label class="top">Title or Position*<input type="text" id="jobTitle" name="title" pattern="[a-zA-Z\-- ]{7, }" required></label>
+                <label class="top">Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Mobile Number*<input type="tel" id="cellPhone" name="mobile" placeholder="xxx-xxx-xxxx" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business/Organization Name*<input type="text" id="orgName" name="orgname" required></label>
+                <div>
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="nonprofit">NP Membership - for non profit organizations, there is no fee</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership</label>
+                </div>
+                <label class="top">Business Description<textarea id="businessDesc" name="businessdesc" rows="10" cols="100" placeholder="Type a brief description of you business/organization here."></textarea></label>
+                <input type="hidden" id="timeStamp" name="timestamp">
+            </fieldset>
+            <input type="submit" value="Sign Up For Membership" class="submitBtn">
+        </form>
+        <div id="benefits">
+            <h2>Membership Benefits</h2>
+            <div id="nonprofit">
+                <h3>NP(Non-Profit) Membership</h3>
+                <Ul>
+                    <li>No Membership Fees</li>
+                    <li>half page add in member directory</li>
+                    <li>Monthly news letter</li>
+                    <li>10% discount for Events</li>
+                </Ul>
+            </div>
+            <div id="bronze">
+                <h3>Bronze Membership</h3>
+                <Ul>
+                    <li>$10/month membership</li>
+                    <li>Quarter page add in member directory</li>
+                    <li>Monthly news letter</li>
+                    <li>5% discount for Events</li>
+                    <li>20% discount yearly business seminar</li>
+                </Ul>
+            </div>
+            <div id="silver">
+                <h3>Silver Membership</h3>
+                <Ul>
+                    <li>$15/month membership</li>
+                    <li>half page add in member directory</li>
+                    <li>Monthly news letter</li>
+                    <li>10% discount for Events</li>
+                    <li>30% discount yearly business seminar</li>
+                </Ul>
+            </div>
+            <div id="gold">
+                <h3>Gold Membership</h3>
+                <Ul>
+                    <li>$25/month membership</li>
+                    <li>full page add in member directory</li>
+                    <li>Monthly news letter</li>
+                    <li>20% discount for Events</li>
+                    <li>40% discount yearly business seminar</li>
+                </Ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="copywrite"></p>
+        <p id="lastmod"></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

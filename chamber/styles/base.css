@@ -167,10 +167,6 @@ footer {
     display:flex;
     flex-direction: column;
 }
-iframe {
-    width:100%;
-    height: auto;
-}
 
 picture {
     width: 100%;
@@ -205,4 +201,104 @@ figure {
     width: 75%;
     height: auto;
     margin: 0px auto 10px;
+}
+
+/*Form CSS*/
+form {
+    margin: 0 1rem 1rem;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem 2%;
+}
+
+form legend {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+form div {
+    margin: 1rem 0;
+}
+
+form label.top input, form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--text-dark);
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: var(--text-dark);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    width: 90%;
+    max-width: 35.5rem;
+    margin:1rem 5%;
+}
+
+form label.top input:required {
+    border-bottom: red solid 2px;
+}
+
+form label.top input:required:valid {
+    border-bottom: green solid 2px;
+
+}
+
+form label.sbs input {
+    margin: 0 .3rem;
+}
+
+#benefits > div {
+    border: 1px solid var(--text-dark);
+    border-radius: 15px;
+    padding: 2rem;
+    font-size: larger;
+    margin: 1rem;
+}
+
+#bronze {
+    background-color: #b08d57;
+}
+
+#silver {
+    background-color: #BCC6CC;
+}
+
+
+#gold {
+    background-color: #d4af37;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 1rem;
 }
