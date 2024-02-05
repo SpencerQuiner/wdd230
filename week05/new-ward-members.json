@@ -1,0 +1,23 @@
+{
+    "familyName":"Quiner",
+    "moveInDate": "06-30-2024",
+    "numberOfRecords":"3",
+    "bishopricVisit":"false",
+    "familyMembers": [
+        {
+            "name":"Spencer",
+            "gender":"male",
+            "birthdate": "01-12-1979"
+        },
+        {
+            "name":"Dacil",
+            "gender":"Female",
+            "birthdate": "09-01-1978"
+        },
+        {
+            "name":"Famara",
+            "gender":"Female",
+            "birthdate": "11-05-2013"
+        }
+    ]
+}
