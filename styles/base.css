@@ -289,3 +289,12 @@ section.card.dark h2 {
 section.card.dark a {
     color: var(--accent);
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    text-transform: capitalize;
+}
