@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "coname": "Hamburgueseria Superguay",
+        "address": "Calle Canalejas, 51 bajo",
+        "telephone": "+34 928 807 627",
+        "siteurl": "https://www.hamburgueseriasuperguay.com/",
+        "logo": "images/superguay-logo.webp",
+        "membership": "Silver",
+        "hours": "Wed-Mon 6PM-12AM"
+      },
+      {
+        "coname": "Lanzarote Open Mall",
+        "address": "Calle León y Castillo 156",
+        "telephone": "+34 928 818 306",
+        "siteurl": "https://www.lanzaroteopenmall.com/en/",
+        "logo": "images/openmall.webp",
+        "membership": "Gold",
+        "hours": "8:AM-10PM"
+      },
+      {
+        "coname": "Euronics Electrón",
+        "address": "Avda. Los Mármoles, 5",
+        "telephone": "+34 928 473 434",
+        "siteurl": "https://tiendaselectron.com/",
+        "logo": "images/electron.webp",
+        "membership": "Silver",
+        "hours": "9AM-8PM"
+      },
+      {
+        "coname": "Mercadona",
+        "address": "C. Tenderete, 1",
+        "telephone": "+34 928 347 216",
+        "siteurl": "https://www.mercadona.es/",
+        "logo": "images/mercadona.webp",
+        "membership": "Silver",
+        "hours": "Mon-Sat 9AM-9:30PM"
+      },
+      {
+        "coname": "Oris Lanzarote",
+        "address": "Calle Manolo Millares 107",
+        "telephone": "+34 828 084 656",
+        "siteurl": "https://www.orislanzarote.com/",
+        "logo": "images/orislanzarote.webp",
+        "membership": "Bronze",
+        "hours": "Mon-Fri 8:30AM-8PM"
+      },
+      {
+        "coname": "IKEA",
+        "address": "Polígono industrial Altavista II, Carr. los Marmoles",
+        "telephone": "+34 828 811 532",
+        "siteurl": "https://www.islas.ikea.es/lanzarote/es/",
+        "logo": "images/ikea.webp",
+        "membership": "Bronze",
+        "hours": "Mon-Fri 9:30AM-10PM"
+      },
+      {
+        "coname": "Pizzeria Italiana Gigi",
+        "address": "Calle Dr. Ruperto González Negrín, 4",
+        "telephone": "+34 928 814 749",
+        "siteurl": "",
+        "logo": "images/gigi.webp",
+        "membership": "Bronze",
+        "hours": "12:30PM-11PM"
+      }
+    ]
+}

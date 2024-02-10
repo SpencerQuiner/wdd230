@@ -32,16 +32,16 @@ let timedif = dateNow - lastVisit;
 
 if(lastVisit !== 0){
     if(timedif < 86400000){
-        message.textContent = `Back so soon! Awesome!`;
+        message.innerText = `Back so soon! Awesome!`;
     }
     else {
         let days = Math.floor(timedif/86400000);
         //console.log(days)
         if(days > 1){
-            message.textContent = `You last visited ${days} days ago.`;
+            message.innerText = `You last visited ${days} days ago.`;
         }
         else {
-            message.textContent = `You last visited ${days} day ago.`;
+            message.innerText = `You last visited ${days} day ago.`;
         }
     }
 }
