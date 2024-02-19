@@ -34,49 +34,52 @@
     </header>
         
     <main>
+        <div id="banner">
+            <button id="closeBanner">x</button>
+            <img src="images/ayntamientoarrecife.webp" alt="Arrecife City Hall">
+            <h2>Arrecife Chamber of Commerce Weekly Meet and Greet</h2>
+            <P>A free event hosted by the Arrecife Chamber of Commerce to provide an opportunity for business owners and other community member to meet and socialize.</P>
+                <p>Every Wednesday at 7:00 PM in the City Hall Courtyard. </p>
+                <p>Refreshments Provided.</p>
+        </div>
             <img id="heroimg" src="images/puentedelasbolashero.jpg" alt="Charco de San Gines">
             <h1 id="title">Arrecife Chamber of Commerce</h1>
         <div id="callToAction">
-            <button id="join">Join</button>
+            <a href="https://spencerquiner.github.io/wdd230/chamber/join.html" id="join" target="_blank">Join Now</a>
         </div>
         <div id="news">
-        <section id="currentEvents">
-            <h2>Current Events</h2>
-            <article>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa exercitationem quis quam! Accusamus nesciunt possimus maxime porro nobis iure molestiae voluptate. Deleniti nisi esse possimus necessitatibus architecto dolores fugit!</p>
-            </article>
-            <article>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis animi voluptatibus odit voluptates, esse neque velit fuga qui aliquam eos ipsa vel quas cum numquam illum. Laudantium, nulla? Officia!</p>
-            </article>
-        </section>
-        <section id="currentWeather">
-            <h2>Weather</h2>
-            <h3>Date and Time:</h3>
-            <h3>Conditions: sunny</h3>
-            <h3>High: 31&deg; C</h3>
-            <h3>Low: 25&deg; C</h3>
-            <h3>Wind: Northeast 25 kph</h3>
-        </section>
+            <section id="currentEvents">
+                <h2>Current Events</h2>
+                <article>
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa exercitationem quis quam! Accusamus nesciunt possimus maxime porro nobis iure molestiae voluptate. Deleniti nisi esse possimus necessitatibus architecto dolores fugit!</p>
+                </article>
+                <article>
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis animi voluptatibus odit voluptates, esse neque velit fuga qui aliquam eos ipsa vel quas cum numquam illum. Laudantium, nulla? Officia!</p>
+                </article>
+            </section>
+            <section id="currentWeather">
+                <h2>Weather</h2>
+                <p>Arrecife, Spain</p>
+                <p>Date and Time: <span id="date-time"></span></p>
+                <p>Current temp: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div id="windData">
+                <p>Wind: <span id="wind"></span><img id= "winddir" src="images/icon-arrow.svg" alt=""></p>
+                </div>
+                <button id="forcastbtn" class="open">Three Day Forecast</button>
+                <div id="forcast" class="closed">
+                    <button id="closeforecast">x</button>
+                    <h3>Three Day Forcast</h3>
+                </div>
+            </section>
         </div>
         <section id="memberSpotLight">
             <H2>Member Spotlight</H2>
-            <article>
-                <img src="images/placeholder.jpeg" alt="member logo">
-                <h3>Business Name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
-            </article>
-            <article>
-                <img src="images/placeholder.jpeg" alt="member logo">
-                <h3>Business Name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
-            </article>
-            <article>
-                <img src="images/placeholder.jpeg" alt="member logo">
-                <h3>Business Name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas nisi at, vel eos sapiente temporibus libero autem amet minima exercitationem earum inventore, eius deleniti ex ullam? Quas, maiores?</p>
-            </article>
         </section>
 
     </main>
@@ -85,5 +88,7 @@
         <p id="lastmod"></p>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

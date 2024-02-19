@@ -60,7 +60,7 @@
         padding: 20px;
         margin: 20px;
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: bold;
         background-color: var(--secondary-color);
         border: none;
         border-radius: 20px;
@@ -168,5 +168,27 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
+    #banner {
+        padding: 1rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        justify-items: center;
     
+    }
+    
+    #banner img {
+        display: block;
+        width: 10rem;
+        border:3px solid var(--text-dark);
+        border-radius: 50%;
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+
+    #banner h2, #banner p {
+        grid-column: 2/3;
+    }
 }

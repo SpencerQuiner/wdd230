@@ -5,8 +5,9 @@ const cards = document.querySelector("#cards");
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.members); // temporary testing of data retreival
+    console.log(data.members);
     displaymembers(data.members);
+    selectForSpotLight(data.members);
   }
 
   const displaymembers = (members) =>{
@@ -58,14 +59,13 @@ async function getMemberData() {
   
 
   gridbtn.addEventListener("click", () => {
-	// example using arrow function
 	cards.classList.add("grid");
 	cards.classList.remove("list");
   gridbtn.classList.add("active");
   listbtn.classList.remove("active");
 });
 
-listbtn.addEventListener("click", showList); // example using defined function
+listbtn.addEventListener("click", showList);
 
 function showList() {
 	cards.classList.add("list");
@@ -73,3 +73,4 @@ function showList() {
   listbtn.classList.add("active");
   gridbtn.classList.remove("active");
 }
+
