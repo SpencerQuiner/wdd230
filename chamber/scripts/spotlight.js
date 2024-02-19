@@ -18,7 +18,7 @@ function selectForSpotLight(members) {
         spotLight.push(member);
       }
     });
-    console.log(spotLight)
+    //console.log(spotLight)
     return spotLight;
 }
 
@@ -38,8 +38,8 @@ function displaySpotlight(array) {
     }else{
       used.push(i);
       count++;
-      console.log(count);
-      console.log(array[i]);
+      //console.log(count);
+      //console.log(array[i]);
         let card = document.createElement("section");
         let company = document.createElement("h2");
         company.innerText = `${array[i].coname}`;
@@ -79,7 +79,7 @@ function displaySpotlight(array) {
     }
     
   }
-  console.log(used);
+  //console.log(used);
 }
   
  getMemberData();
